@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elystronics Repair Shop - 4 Screens Design Showcase | LSPU ITST 306</title>
+  <meta name="description"
+    content="Official 4-Screen UX/UI Deliverable for Elystronics Repair Shop - Desktop (1440x1024) and Mobile Responsive (390x844). Shop Technicians Raul Z. Esperanza and Arman, Poblacion V, Sta. Cruz, Laguna.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <style>
+    body {
+      background-color: #0B132B;
+      color: #E2E8F0;
+      font-family: 'Inter', sans-serif;
+      padding: 0;
+      margin: 0;
+    }
+
+    .screens-topbar {
+      background: #0F172A;
+      border-bottom: 2px solid var(--accent);
+      padding: 1rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .screens-nav-tabs {
+      display: flex;
+      background: #1E293B;
+      border-radius: var(--radius-md);
+      padding: 4px;
+      gap: 4px;
+    }
+
+    .screens-tab-btn {
+      background: transparent;
+      border: none;
+      color: #94A3B8;
+      padding: 0.5rem 1rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      transition: all var(--transition-fast);
+    }
+
+    .screens-tab-btn:hover {
+      color: #fff;
+    }
+
+    .screens-tab-btn.active {
+      background: var(--secondary);
+      color: #fff;
+    }
+
+    .screens-container {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 5rem;
+    }
+
+    .screens-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .screens-header h1 {
+      font-size: 2.25rem;
+      color: #fff;
+      margin-bottom: 0.5rem;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .screens-header p {
+      color: #94A3B8;
+      max-width: 760px;
+      margin: 0 auto;
+      font-size: 1.05rem;
+    }
+
+    .screen-card-row {
+      background: #1E293B;
+      border-radius: var(--radius-xl);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 2rem;
+      margin-bottom: 3rem;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    }
+
+    .screen-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding-bottom: 1rem;
+    }
+
+    .screen-title {
+      font-size: 1.4rem;
+      color: #F97316;
+      font-family: 'Outfit', sans-serif;
+      margin-bottom: 0.25rem;
+    }
+
+    .screen-desc {
+      color: #CBD5E1;
+      font-size: 0.95rem;
+      max-width: 800px;
+      line-height: 1.6;
+    }
+
+    .screen-preview-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    @media (min-width: 1100px) {
+      .screen-preview-grid {
+        grid-template-columns: 2.2fr 1fr;
+      }
+    }
+
+    .frame-desktop {
+      width: 100%;
+      height: 600px;
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 3px solid #334155;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .frame-desktop iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .frame-mobile {
+      width: 100%;
+      max-width: 390px;
+      height: 600px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 28px;
+      overflow: hidden;
+      border: 6px solid #334155;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .frame-mobile iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Top Navigation Bar -->
+  <header class="screens-topbar" role="banner">
+    <div style="display: flex; align-items: center; gap: 1rem;">
+      <div style="font-weight: 800; font-size: 1.25rem; color: #fff; font-family: 'Outfit', sans-serif;">
+        ELY<span style="color: var(--accent);">STRONICS</span> <span
+          style="font-size: 0.85rem; font-weight: 400; color: #94A3B8;">• Repair Shop Showcase</span>
+      </div>
+      <div style="display: none; @media(min-width: 768px){display: block;}">
+        <span style="display: block; font-size: 0.75rem; color: #94A3B8;">ITST 306: UX/UI and Cross Platform • Final
+          Project</span>
+      </div>
+    </div>
+
+    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+      <a href="https://www.figma.com/design/fahoLpuuLl7OSEWnH1k7Hx" target="_blank" class="btn btn-primary btn-sm">🎨 Open Figma Design</a>
+      <a href="index.html" class="btn btn-secondary btn-sm">🏠 Live Site</a>
+      <a href="prototype.html" class="btn btn-outline btn-sm" style="color: #fff; border-color: #64748B;">📱 Interactive Prototype</a>
+      <a href="project-template.html" class="btn btn-outline btn-sm" style="color: #fff; border-color: #64748B;">📋
+        Project Paper</a>
+    </div>
+  </header>
+
+  <main class="screens-container">
+    <section class="page-single-section screens-single-section" aria-label="4-Screen Design System Showcase">
+      <div class="screens-header">
+        <span class="section-badge" style="background: rgba(249, 115, 22, 0.2); color: #FDBA74;">Compliant 4-Screen
+          Architecture</span>
+        <h1>Website System with Strictly 1 Section Per Screen</h1>
+        <p>
+          Every screen of the Elystronics Repair Shop system is architected to feature <strong>exactly 1 semantic
+            &lt;section&gt; element</strong> inside &lt;main&gt;, fully responsive across all viewports from 320px
+          mobile to 1440px desktop displays.
+        </p>
+      </div>
+
+      <!-- Screen 1: Home page -->
+      <div class="screen-card-row" id="screen1">
+        <div class="screen-meta">
+          <div>
+            <div class="screen-title">Screen 1: Home Page (index.html)</div>
+            <div class="screen-desc">
+              Features an authoritative Hero section, Shop Overview & Guarantee Card, 6 core appliance categories
+              visible upfront, skilled technicians profile, 4-step repair process, and genuine community reviews in
+              Laguna.
+            </div>
+          </div>
+          <a href="index.html" target="_blank" class="btn btn-primary btn-sm">Open index.html ➔</a>
+        </div>
+
+        <div class="screen-preview-grid">
+          <div>
+            <div style="font-size: 0.85rem; color: #94A3B8; margin-bottom: 0.5rem;">🖥️ Desktop Viewport (1440px):</div>
+            <div class="frame-desktop">
+              <iframe src="index.html" title="Screen 1: Home Page Desktop View"></iframe>
+            </div>
+          </div>
+          <div>
+            <div style="font-size: 0.85rem; color: #94A3B8; margin-bottom: 0.5rem;">📱 Mobile Viewport (390px):</div>
+            <div class="frame-mobile">
+              <iframe src="index.html" title="Screen 1: Home Page Mobile View"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Screen 2: About or Services page -->
+      <div class="screen-card-row" id="screen2">
+        <div class="screen-meta">
+          <div>
+            <div class="screen-title">Screen 2: About Us Page (about.html)</div>
+            <div class="screen-desc">
+              The heritage and technical philosophy of Elystronics Repair Shop, skilled shop technicians Raul Z.
+              Esperanza and Arman, 3 Core Pillars (Component-Level Precision, Inverter Tech, 90-Day Warranty), 4-stage
+              Quality SOP, and 2 Technical Repair Divisions.
+            </div>
+          </div>
+          <a href="about.html" target="_blank" class="btn btn-primary btn-sm">Open about.html ➔</a>
+        </div>
+
+        <div class="screen-preview-grid">
+          <div>
+            <div style="font-size: 0.85rem; color: #94A3B8; margin-bottom: 0.5rem;">🖥️ Desktop Viewport (1440px):</div>
+            <div class="frame-desktop">
+              <iframe src="about.html" title="Screen 2: About Page Desktop View"></iframe>
+            </div>
+          </div>
+          <div>
+            <div style="font-size: 0.85rem; color: #94A3B8; margin-bottom: 0.5rem;">📱 Mobile Viewport (390px):</div>
+            <div class="frame-mobile">
+              <iframe src="about.html" title="Screen 2: About Page Mobile View"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Screen 3: Main offering page -->
+      <div class="screen-card-row" id="screen3">
+        <div class="screen-meta">
+          <div>
+            <div class="screen-title">Screen 3: Main Offering Page (services.html)</div>
+            <div class="screen-desc">
+              Complete service catalog featuring 6-category interactive filter tabs, 9 detailed appliance repair cards
+              with transparent PHP pricing, standard Diagnostic & Labor Rate Matrix table, and service FAQs.
+            </div>
+          </div>
+          <a href="services.html" target="_blank" class="btn btn-primary btn-sm">Open services.html ➔</a>
+        </div>
+
+        <div class="screen-preview-grid">
+          <div>
+            <div style="font-size: 0.85rem; color: #94A3B8; margin-bottom: 0.5rem;">🖥️ Desktop Viewport (1440px):</div>
+            <div class="frame-desktop">
+              <iframe src="services.html" title="Screen 3: Main Offering Page Desktop View"></iframe>
+            </div>
+          </div>
+          <div>
+            <div style="font-size: 0.85rem; color: #94A3B8; margin-bottom: 0.5rem;">📱 Mobile Viewport (390px):</div>
+            <div class="frame-mobile">
+              <iframe src="services.html" title="Screen 3: Main Offering Page Mobile View"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Screen 4: Contact page -->
+      <div class="screen-card-row" id="screen4">
+        <div class="screen-meta">
+          <div>
+            <div class="screen-title">Screen 4: Contact Page (contact.html)</div>
+            <div class="screen-desc">
+              Comprehensive 'How to Contact' hub: 4 contact channels (Hotline, Shop Walk-in, Online Message Form, Home
+              Service Inquiry), 3-step consultation process guide, shop hotline (0917 112 0320), Google Maps directions,
+              and 11 Laguna towns coverage.
+            </div>
+          </div>
+          <a href="contact.html" target="_blank" class="btn btn-primary btn-sm">Open contact.html ➔</a>
+        </div>
+
+        <div class="screen-preview-grid">
+          <div>
+            <div style="font-size: 0.85rem; color: #94A3B8; margin-bottom: 0.5rem;">🖥️ Desktop Viewport (1440px):</div>
+            <div class="frame-desktop">
+              <iframe src="contact.html" title="Screen 4: Contact Page Desktop View"></iframe>
+            </div>
+          </div>
+          <div>
+            <div style="font-size: 0.85rem; color: #94A3B8; margin-bottom: 0.5rem;">📱 Mobile Viewport (390px):</div>
+            <div class="frame-mobile">
+              <iframe src="contact.html" title="Screen 4: Contact Page Mobile View"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+
+</html>

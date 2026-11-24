@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Repair Services & Price Matrix | Elystronics Repair Shop • Sta. Cruz, Laguna</title>
+  <meta name="description"
+    content="Transparent pricing catalog and repair matrix for Smart TVs, refrigerators, washers, and aircons at Elystronics Repair Shop in Poblacion V, Sta. Cruz, Laguna. Call 0917 112 0320.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+</head>
+
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Elystronics Repair Shop Home">
+        <div class="brand-icon-box" aria-hidden="true">
+          <svg fill="currentColor" viewBox="0 0 24 24">
+            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+          </svg>
+        </div>
+        <div class="brand-text-wrap">
+          <span class="brand-name">ELY<span>STRONICS</span></span>
+          <span class="brand-tagline">Repair Shop • Sta. Cruz, Laguna</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="desktop-nav" role="navigation" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="services.html" class="nav-link active" aria-current="page">Repair Services</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="mobileMenuToggle" class="mobile-menu-toggle" aria-label="Open mobile navigation menu">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobileNavDrawer" class="mobile-nav-drawer" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="mobile-drawer-content">
+      <div class="mobile-drawer-header">
+        <div class="brand-logo">
+          <div class="brand-icon-box" style="width: 36px; height: 36px;">
+            <svg fill="currentColor" viewBox="0 0 24 24" width="20" height="20">
+              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+            </svg>
+          </div>
+          <span class="brand-name" style="font-size: 1.15rem;">ELY<span>STRONICS</span></span>
+        </div>
+        <button id="mobileMenuClose" class="mobile-menu-toggle" aria-label="Close navigation menu">
+          <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <nav class="mobile-nav-links">
+        <a href="index.html" class="mobile-nav-link">🏠 Home</a>
+        <a href="about.html" class="mobile-nav-link">ℹ️ About Us</a>
+        <a href="services.html" class="mobile-nav-link active">🛠️ Main Offering</a>
+        <a href="contact.html" class="mobile-nav-link">📞 Contact</a>
+      </nav>
+
+      <div class="mobile-drawer-footer">
+        <a href="tel:09171120320" class="btn btn-secondary btn-block" style="margin-bottom: 0.5rem;">
+          📞 0917 112 0320
+        </a>
+        <a href="contact.html" class="btn btn-primary btn-block">
+          💬 Send an Inquiry
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <section class="page-single-section services-single-section"
+      aria-label="Screen 3: Main Appliance Offerings & Rate Matrix">
+      <!-- Clean Page Intro Header -->
+      <div class="page-intro-header">
+        <div class="container">
+          <span class="section-badge">Main Offering • Service Catalog</span>
+          <h1>Transparent Appliance Repair Rates & Services</h1>
+          <p>
+            Explore our complete service offerings and pricing matrix in Sta. Cruz, Laguna. Upfront quotations verified
+            before any work begins.
+          </p>
+        </div>
+      </div>
+
+      <!-- Category Filter Pills & 9 Detailed Offerings Block (Upfront in First Section) -->
+      <div class="section-block">
+        <div class="container">
+          <!-- Filter Navigation Tabs -->
+          <div class="service-filter-bar" role="tablist" aria-label="Filter appliances by category">
+            <button class="filter-btn active" data-filter="all" role="tab">All Appliances</button>
+            <button class="filter-btn" data-filter="tv" role="tab">Smart TVs</button>
+            <button class="filter-btn" data-filter="refrigerator" role="tab">Refrigerators</button>
+            <button class="filter-btn" data-filter="washing" role="tab">Washers</button>
+            <button class="filter-btn" data-filter="aircon" role="tab">Air Conditioning</button>
+            <button class="filter-btn" data-filter="kitchen" role="tab">Microwaves & Kitchen</button>
+            <button class="filter-btn" data-filter="small" role="tab">Audio & Fans</button>
+          </div>
+
+          <!-- 9 Detailed Service Cards Grid -->
+          <div class="grid-3" id="servicesGrid">
+            <!-- Offering 1: TV Backlight Array -->
+            <article class="service-card service-grid-item" data-category="tv" id="tv">
+              <div class="service-icon-box">📺</div>
+              <span class="section-badge" style="width: fit-content;">Most Requested</span>
+              <h3>Smart LED TV Backlight Strips</h3>
+              <p>Replacement of burnt aluminum LED backlight arrays when your TV has audio but no picture (flashlight
+                test visible), dim screen, or dark patches.</p>
+              <div class="service-tags">
+                <span class="tag">32" to 75" Models</span>
+                <span class="tag">LG / Samsung / TCL</span>
+                <span class="tag">Devant / Sony</span>
+              </div>
+              <div class="service-price-row">
+                <div class="service-price">
+                  ₱650 - ₱1,400
+                  <span>Includes new LED strips + labor</span>
+                </div>
+                <a href="contact.html?service=tv_backlight" class="btn btn-primary btn-sm">Inquire Now ➔</a>
+              </div>
+            </article>
+
+            <!-- Offering 2: TV Power Board & Mainboard -->
+            <article class="service-card service-grid-item" data-category="tv">
+              <div class="service-icon-box">⚡</div>
+              <h3>TV Power Supply & Main Motherboard</h3>
+              <p>Repair of completely dead TVs, blinking standby indicators, reboot loop on logo, or surge damage.
+                Component-level soldering on filter caps and PWM ICs.</p>
+              <div class="service-tags">
+                <span class="tag">No Power</span>
+                <span class="tag">Stuck on Logo</span>
+                <span class="tag">HDMI No Signal</span>
+              </div>
+              <div class="service-price-row">
+                <div class="service-price">
+                  ₱350 - ₱750
+                  <span>Tested on Bench Rig</span>
+                </div>
+                <a href="contact.html?service=tv_power" class="btn btn-primary btn-sm">Inquire Now ➔</a>
+              </div>
+            </article>
+
+            <!-- Offering 3: Refrigerator Defrost System -->
+            <article class="service-card service-grid-item" data-category="refrigerator" id="refrigerator">
+              <div class="service-icon-box">❄️</div>
+              <span class="section-badge" style="width: fit-content;">Fast Turnaround</span>
+              <h3>Two-Door Refrigerator Defrost System</h3>
+              <p>When the freezer frosts over with ice but the lower compartment is not cold. Replacement of failed
+                bimetal thermostats, thermal fuses, timers, or heaters.</p>
+              <div class="service-tags">
+                <span class="tag">Condura</span>
+                <span class="tag">Panasonic</span>
+                <span class="tag">Sharp</span>
+                <span class="tag">Whirlpool</span>
+              </div>
+              <div class="service-price-row">
+                <div class="service-price">
+                  ₱350 - ₱750
+                  <span>On-site service in Laguna</span>
+                </div>
+                <a href="contact.html?service=refrigerator_defrost" class="btn btn-primary btn-sm">Inquire Now ➔</a>
+              </div>
+            </article>
+
+            <!-- Offering 4: Inverter Refrigerator PCB & Freon -->
+            <article class="service-card service-grid-item" data-category="refrigerator">
+              <div class="service-icon-box">🔧</div>
+              <h3>Inverter Refrigerator Freon & PCB</h3>
+              <p>Refrigerant leak detection with high-pressure nitrogen testing, capillary tube replacement, vacuum pump
+                evacuation, and eco R600a/R134a charging.</p>
+              <div class="service-tags">
+                <span class="tag">Inverter PCB</span>
+                <span class="tag">R600a Eco-Freon</span>
+                <span class="tag">Nitrogen Leak Test</span>
+              </div>
+              <div class="service-price-row">
+                <div class="service-price">
+                  ₱750 - ₱1,650
+                  <span>Includes filter drier & freon</span>
+                </div>
+                <a href="contact.html?service=refrigerator_freon" class="btn btn-primary btn-sm">Inquire Now ➔</a>
+              </div>
+            </article>
+
+            <!-- Offering 5: Washing Machine Gearbox & Motor -->
+            <article class="service-card service-grid-item" data-category="washing" id="washing">
+              <div class="service-icon-box">🧺</div>
+              <h3>Washer Transmission Gearbox & Drain Motor</h3>
+              <p>Replacement of grinding gearbox transmissions, failed drain valve motors, drive belts, or worn
+                suspension damper rods causing violent spin vibration.</p>
+              <div class="service-tags">
+                <span class="tag">Automatic Top Load</span>
+                <span class="tag">Twin Tub</span>
+                <span class="tag">Front Load</span>
+              </div>
+              <div class="service-price-row">
+                <div class="service-price">
+                  ₱550 - ₱1,100
+                  <span>Home Service Available</span>
+                </div>
+                <a href="contact.html?service=washer_gearbox" class="btn btn-primary btn-sm">Inquire Now ➔</a>
+              </div>
+            </article>
+
+            <!-- Offering 6: Washing Machine Digital PCB -->
+            <article class="service-card service-grid-item" data-category="washing">
+              <div class="service-icon-box">📟</div>
+              <h3>Washer Digital PCB Board & Sensors</h3>
+              <p>Resolving error codes (E1, E2, E3, dE), water level pressure switch calibration, and moisture-corroded
+                circuit board trace rewiring.</p>
+              <div class="service-tags">
+                <span class="tag">PCB Board Fix</span>
+                <span class="tag">Pressure Switch</span>
+                <span class="tag">Lid Switch Sensor</span>
+              </div>
+              <div class="service-price-row">
+                <div class="service-price">
+                  ₱450 - ₱850
+                  <span>Board-level micro-soldering</span>
+                </div>
+                <a href="contact.html?service=washer_pcb" class="btn btn-primary btn-sm">Inquire Now ➔</a>
+              </div>
+            </article>
+
+            <!-- Offering 7: Aircon Cleaning & Preventive -->
+            <article class="service-card service-grid-item" data-category="aircon" id="aircon">
+              <div class="service-icon-box">💨</div>
+              <h3>Aircon Chemical Deep Wash & Maintenance</h3>
+              <p>Disassembly and pressure cleaning of evaporator cooling coils, cross-flow blower wheels, drain pans,
+                and condenser fins using non-acidic aluminum wash.</p>
+              <div class="service-tags">
+                <span class="tag">Window Type</span>
+                <span class="tag">Split Type</span>
+                <span class="tag">Antimicrobial Wash</span>
+              </div>
+              <div class="service-price-row">
+                <div class="service-price">
+                  ₱350 - ₱650
+                  <span>Per indoor / outdoor unit</span>
+                </div>
+                <a href="contact.html?service=aircon_wash" class="btn btn-primary btn-sm">Inquire Now ➔</a>
+              </div>
+            </article>
+
+            <!-- Offering 8: Microwave & Induction -->
+            <article class="service-card service-grid-item" data-category="kitchen" id="kitchen">
+              <div class="service-icon-box">🍲</div>
+              <h3>Microwave Magnetron & Induction Cooker Fix</h3>
+              <p>Replacement of high-voltage magnetrons when turntable rotates but fails to heat, high-voltage
+                diodes/capacitors, and induction IGBT switching transistors.</p>
+              <div class="service-tags">
+                <span class="tag">Magnetron</span>
+                <span class="tag">HV Diode</span>
+                <span class="tag">Induction IGBT</span>
+              </div>
+              <div class="service-price-row">
+                <div class="service-price">
+                  ₱300 - ₱750
+                  <span>24 to 48 Hours turnaround</span>
+                </div>
+                <a href="contact.html?service=microwave_repair" class="btn btn-primary btn-sm">Inquire Now ➔</a>
+              </div>
+            </article>
+
+            <!-- Offering 9: Electric Fans & Audio -->
+            <article class="service-card service-grid-item" data-category="small" id="small">
+              <div class="service-icon-box">🔊</div>
+              <h3>Electric Fans, Rice Cookers & Audio Amplifiers</h3>
+              <p>Electric fan rotor shaft and bronze bushing replacement, thermal fuse rewiring for rice cookers, and
+                power transistor matching for professional audio amplifiers.</p>
+              <div class="service-tags">
+                <span class="tag">Bushing & Shaft</span>
+                <span class="tag">Thermal Fuse</span>
+                <span class="tag">Audio Amp Transistor</span>
+              </div>
+              <div class="service-price-row">
+                <div class="service-price">
+                  ₱150 - ₱450
+                  <span>Same-day release available</span>
+                </div>
+                <a href="contact.html?service=small_appliances" class="btn btn-primary btn-sm">Inquire Now ➔</a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Complete Diagnostic & Pricing Matrix Table -->
+          <div class="section-header" style="margin-top: var(--space-16);">
+            <span class="section-badge blue">Transparent Rate Matrix</span>
+            <h2>Standard Diagnostic & Repair Rate Matrix</h2>
+            <p>Clear reference table showing expected labor and replacement component costs for shop drop-off and Laguna
+              on-site services.</p>
+          </div>
+
+          <div class="table-responsive">
+            <table class="rate-matrix-table"
+              style="width: 100%; border-collapse: collapse; text-align: left; background: #fff; font-size: 0.9rem;">
+              <thead>
+                <tr style="background: var(--primary); color: #fff;">
+                  <th style="padding: 1rem; border: 1px solid var(--neutral-300);">Appliance Category</th>
+                  <th style="padding: 1rem; border: 1px solid var(--neutral-300);">Typical Problem / Symptoms</th>
+                  <th style="padding: 1rem; border: 1px solid var(--neutral-300);">Replaced Component / Service</th>
+                  <th style="padding: 1rem; border: 1px solid var(--neutral-300);">Estimated Cost (Parts + Labor)</th>
+                  <th style="padding: 1rem; border: 1px solid var(--neutral-300);">Est. Turnaround</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="padding: 0.85rem 1rem; border: 1px solid var(--neutral-200); font-weight: 600;">📺 Smart
+                    LED / LCD TV</td>
+                  <td style="padding: 0.85rem 1rem; border: 1px solid var(--neutral-200);">Audio present but black
+                    screen; dim picture</td>
+                  <td style="padding: 0.85rem 1rem; border: 1px solid var(--neutral-200);">Full aluminum LED backlight
+                    strip replacement</td>
+                  <td
+                    style="padding: 0.85rem 1rem; border: 1px solid var(--neutral-200); font-weight: 700; color: var(--accent);">
+                    ₱650 - ₱1,400</td>
+                  <td style="padding: 0.85rem 1rem; border: 1px solid var(--neutral-200);">24 - 48 Hours</td>
+                </tr>
+                <tr style="background: var(--neutral-50);">
+                  <td style="padding: 0.85rem 1rem; border: 1px solid var(--neutral-200); font-weight: 600;">📺 Smart TV
+                    Mainboard</td>
+                  <td style="padding: 0.85rem 1rem; border: 1px solid var(--neutral-200);">No power, stuck on boot logo,
+                    HDMI no signal</td>
+                  <td style="padding: 0.85rem 1rem; border: 1px solid var(--neutral-200);">Power supply PWM IC, low-ESR
+                    capacitors, eMMC reflash</td>
+                  <td
+                    style="padding: 0.85rem 1rem; border: 1px solid var(--neutral-200); font-weight: 700; color: var(--accent);">
+                    ₱350 - ₱750</td>
+                  <td style="padding: 0.85rem 1rem; border: 1px solid var(--neutral-200);">24 - 48 Hours</td>
+                </tr>
+                <tr>
+                  <td style="padding: 0.85rem 1rem; border: 1px solid var(--neutral-200); font-weight: 600;">❄️
+                    Refrigerator Defrost</td>
+                  <td style="padding: 0.85rem 1rem; border: 1px solid var(--neutral-200);">Frozen freezer but warm lower
+                    vegetable box</td>
+                  <td style="padding: 0.85rem 1rem; border: 1px solid var(--neutral-200);">Bimetal defrost sensor,
+                    thermal fuse, defrost timer</td>
+                  <td
+                    style="padding: 0.85rem 1rem; border: 1px solid var(--neutral-200); font-weight: 700; color: var(--accent);">
+                    ₱350 - ₱750</td>
+                  <td style="padding: 0.85rem 1rem; border: 1px solid var(--neutral-200);">Same-Day / 24 Hours</td>
+                </tr>
+                <tr style="background: var(--neutral-50);">
+                  <td style="padding: 0.85rem 1rem; border: 1px solid var(--neutral-200); font-weight: 600;">❄️ Inverter
+                    Refrigerator Freon</td>
+                  <td style="padding: 0.85rem 1rem; border: 1px solid var(--neutral-200);">Compressor running but no
+                    cooling; freon leak</td>
+                  <td style="padding: 0.85rem 1rem; border: 1px solid var(--neutral-200);">Nitrogen pressure test,
+                    filter drier, vacuum & R600a freon</td>
+                  <td
+                    style="padding: 0.85rem 1rem; border: 1px solid var(--neutral-200); font-weight: 700; color: var(--accent);">
+                    ₱750 - ₱1,650</td>
+                  <td style="padding: 0.85rem 1rem; border: 1px solid var(--neutral-200);">24 - 48 Hours</td>
+                </tr>
+                <tr>
+                  <td style="padding: 0.85rem 1rem; border: 1px solid var(--neutral-200); font-weight: 600;">🧺
+                    Automatic Washing Machine</td>
+                  <td style="padding: 0.85rem 1rem; border: 1px solid var(--neutral-200);">Violent vibration during spin
+                    cycle; grinding noise</td>
+                  <td style="padding: 0.85rem 1rem; border: 1px solid var(--neutral-200);">Transmission gearbox
+                    assembly, suspension dampers</td>
+                  <td
+                    style="padding: 0.85rem 1rem; border: 1px solid var(--neutral-200); font-weight: 700; color: var(--accent);">
+                    ₱550 - ₱1,100</td>
+                  <td style="padding: 0.85rem 1rem; border: 1px solid var(--neutral-200);">24 - 48 Hours</td>
+                </tr>
+                <tr style="background: var(--neutral-50);">
+                  <td style="padding: 0.85rem 1rem; border: 1px solid var(--neutral-200); font-weight: 600;">🧺 Washer
+                    Digital PCB</td>
+                  <td style="padding: 0.85rem 1rem; border: 1px solid var(--neutral-200);">Error codes (E1, E2, dE),
+                    unresponsive control panel</td>
+                  <td style="padding: 0.85rem 1rem; border: 1px solid var(--neutral-200);">Water level pressure sensor,
+                    PCB trace repair</td>
+                  <td
+                    style="padding: 0.85rem 1rem; border: 1px solid var(--neutral-200); font-weight: 700; color: var(--accent);">
+                    ₱450 - ₱850</td>
+                  <td style="padding: 0.85rem 1rem; border: 1px solid var(--neutral-200);">24 Hours</td>
+                </tr>
+                <tr>
+                  <td style="padding: 0.85rem 1rem; border: 1px solid var(--neutral-200); font-weight: 600;">💨 Air
+                    Conditioner Wash</td>
+                  <td style="padding: 0.85rem 1rem; border: 1px solid var(--neutral-200);">Weak airflow, foul odor,
+                    water leakage, high power draw</td>
+                  <td style="padding: 0.85rem 1rem; border: 1px solid var(--neutral-200);">Full chemical disassembly
+                    wash, blower wheel clean, drain clear</td>
+                  <td
+                    style="padding: 0.85rem 1rem; border: 1px solid var(--neutral-200); font-weight: 700; color: var(--accent);">
+                    ₱350 - ₱650</td>
+                  <td style="padding: 0.85rem 1rem; border: 1px solid var(--neutral-200);">2 - 4 Hours</td>
+                </tr>
+                <tr style="background: var(--neutral-50);">
+                  <td style="padding: 0.85rem 1rem; border: 1px solid var(--neutral-200); font-weight: 600;">🍲
+                    Microwave / Induction</td>
+                  <td style="padding: 0.85rem 1rem; border: 1px solid var(--neutral-200);">Turns on but does not heat
+                    food; sparks or shuts down</td>
+                  <td style="padding: 0.85rem 1rem; border: 1px solid var(--neutral-200);">High-voltage magnetron, HV
+                    diode/capacitor, induction IGBT</td>
+                  <td
+                    style="padding: 0.85rem 1rem; border: 1px solid var(--neutral-200); font-weight: 700; color: var(--accent);">
+                    ₱300 - ₱750</td>
+                  <td style="padding: 0.85rem 1rem; border: 1px solid var(--neutral-200);">24 - 48 Hours</td>
+                </tr>
+                <tr>
+                  <td style="padding: 0.85rem 1rem; border: 1px solid var(--neutral-200); font-weight: 600;">🔊 Small
+                    Appliances & Fans</td>
+                  <td style="padding: 0.85rem 1rem; border: 1px solid var(--neutral-200);">Fan blade stiff/not spinning,
+                    rice cooker no power</td>
+                  <td style="padding: 0.85rem 1rem; border: 1px solid var(--neutral-200);">Bronze bushing & rotor shaft,
+                    thermal cutoff fuse, audio transistors</td>
+                  <td
+                    style="padding: 0.85rem 1rem; border: 1px solid var(--neutral-200); font-weight: 700; color: var(--accent);">
+                    ₱150 - ₱450</td>
+                  <td style="padding: 0.85rem 1rem; border: 1px solid var(--neutral-200);">Same-Day Release</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Service FAQs -->
+          <div style="margin-top: var(--space-12); max-width: 800px; margin-left: auto; margin-right: auto;">
+            <div class="section-header" style="margin-bottom: var(--space-8);">
+              <span class="section-badge blue">Service Inquiries</span>
+              <h2>Frequently Asked Questions About Repairs</h2>
+            </div>
+
+            <div class="faq-list">
+              <div class="faq-item">
+                <button class="faq-question">
+                  <span>How long does a typical repair diagnosis take?</span>
+                  <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>For shop drop-offs at our Poblacion V, Sta. Cruz counter, initial visual checks and bench
+                    diagnostics are usually completed within the same day. You will receive an exact quote before any
+                    parts are replaced.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  <span>Do you offer on-site home service for heavy appliances?</span>
+                  <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>Yes! We provide on-site technician visits across Sta. Cruz and nearby Laguna towns for large
+                    appliances such as two-door refrigerators, automatic washing machines, and split-type air
+                    conditioners. Call 0917 112 0320 to inquire about schedule availability.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  <span>What warranty is included with completed repairs?</span>
+                  <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>All component replacements and labor include a 90-day official service warranty slip. If the exact
+                    same issue recurs within the warranty window, our shop technicians will service it
+                    with priority.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Banner Block -->
+      <div class="section-block block-navy" style="text-align: center;">
+        <div class="container">
+          <h2 style="color: #fff; margin-bottom: 1rem;">Ready to Have Your Appliance Restored?</h2>
+          <p style="max-width: 600px; margin: 0 auto 1.5rem; color: var(--neutral-300);">
+            Contact our shop technicians directly or send an online inquiry for prompt assistance.
+          </p>
+          <a href="contact.html" class="btn btn-primary btn-lg">
+            Contact Elystronics Repair Shop ➔
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-logo" style="margin-bottom: 1rem;">
+            <div class="brand-icon-box" style="background: var(--accent);">
+              <svg fill="currentColor" viewBox="0 0 24 24" width="22" height="22">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+              </svg>
+            </div>
+            <span class="brand-name" style="color: #fff;">ELY<span style="color: var(--accent);">STRONICS</span></span>
+          </div>
+          <p>
+            Elystronics Repair Shop - Reliable diagnostics and repair center for home appliances and electronic devices
+            in Poblacion V, Sta. Cruz, Laguna.
+          </p>
+          <div style="font-size: 0.85rem; color: var(--neutral-300); margin-top: 0.5rem;">
+            <strong>Shop Technicians:</strong> Raul Z. Esperanza & Arman<br>
+            <strong>Call or SMS:</strong> 0917 112 0320<br>
+            <strong>Address:</strong> Poblacion V, Sta. Cruz, Laguna
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Repair Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="prototype.html">Interactive Prototype</a></li>
+            <li><a href="project-template.html">Project Report</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Operating Hours</h4>
+          <p style="font-size: 0.9rem; margin-bottom: 0.5rem; color: #fff;">
+            <strong>Mon - Sat:</strong> 8:00 AM - 6:00 PM<br>
+            <strong>Sunday:</strong> On-call Emergency Assistance
+          </p>
+          <div
+            style="background: rgba(255, 255, 255, 0.08); border-radius: 8px; padding: 0.75rem; margin-top: 1rem; font-size: 0.8rem; border-left: 3px solid var(--accent);">
+            <strong>Service Guarantee:</strong> All repairs undergo live bench testing before release and include a
+            90-day service warranty.
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026-2027 Elystronics Repair Shop. All rights reserved.
+        </div>
+        <div>
+          ITST 306 UX/UI Final Project • Client 1 Implementation
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Sticky Bar -->
+  <aside class="mobile-sticky-bar" aria-label="Quick Mobile Actions">
+    <a href="tel:09171120320" class="btn btn-secondary btn-sm" style="flex: 1;">
+      📞 Call Shop
+    </a>
+    <a href="contact.html" class="btn btn-primary btn-sm" style="flex: 1.2;">
+      💬 Contact Us
+    </a>
+  </aside>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
